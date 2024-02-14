@@ -58,6 +58,9 @@
     let buttonHeight = 48; // Starting height in pixels
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
+    let noButtonHeight = 48; // Starting height in pixels
+    let noButtonWidth = 80;
+    let noFontSize = 20; // Starting font size in pixels
     const imagePaths = [
       "./images/image1.gif",
       "./images/image2.gif",
@@ -80,10 +83,10 @@
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
           noButton.textContent = ["No", "Estas segura?", "Please...", "No te creo", "Me rompes el kokoro", "Voy a llorar..."][noClickCount];
-          buttonHeight -= 5; // Increase height by 5px on each click
-          fontSize -= 5; // Increase font size by 1px on each click
-          noButton.style.height = `${buttonHeight}px`; // Update button height
-          noButton.style.fontSize = `${fontSize}px`; // Update font size
+          noButtonHeight -= 5; // Increase height by 5px on each click
+          noFontSize -= 5; // Increase font size by 1px on each click
+          noButton.style.height = `${noButtonHeight}px`; // Update button height
+          noButton.style.fontSize = `${noFontSize}px`; // Update font size
         }
       }
     });
